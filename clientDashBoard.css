@@ -86,11 +86,19 @@ img{
 .appointment-container{
     font-family: 'Roboto', sans-serif;
     padding: 1%;
-    height: 10vh;
+    height: 10vh;  
+}
+.category-container{
     display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
+    width: 100%;
     
+}
+.category{
+    width: 20%;
+    padding:1%;
+}
+.color{
+    background: rgb(2, 151, 139);
 }
 .option-container{
     width: 100%;
@@ -102,6 +110,7 @@ img{
 .option{
     border-right:  1px solid rgb(0, 0, 0);
     padding-right: 10px;
+    font-size: 25px;
 }
 .option:hover{
     color: rgb(0, 212, 18);
@@ -118,11 +127,12 @@ img{
 .meeting-container{
     display: flex;
     margin-top: 1%;
-    background: rgb(248, 241, 241);
+    background: rgb(221, 210, 210);
     padding: 1%;
 }
 .title{
     font-weight: bold;
+    font-size:18px;
 }
 .date{
     font-size: 18px;
@@ -132,10 +142,48 @@ img{
     width:100px;
     background: rgb(2, 151, 139);
     border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(1, 46, 23, 0.288);
 }
 .meeting-details{
     padding-left: 1%;
+    display: flex;
+    align-items: center;
 }
 .reviews-container{
+
     margin-top: 10px;
+    width: 100%;
+
+}
+.review-container
+{
+    display: flex;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.review-image-container{
+    
+    width : 50px;
+    height: 50px;
+    background:rgb(2, 151, 139) ;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+}
+.review-rating
+{
+    font-weight: bold;
+}
+.comment
+{
+    width: 80%;
+}
+.review-details
+{ 
+    
+    padding-left: 3%;
+    margin-left: 10px;
+    width: 50%;
+}
+.review-detail{
+    width: 100%;
 }
