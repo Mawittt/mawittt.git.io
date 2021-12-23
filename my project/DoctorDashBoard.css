@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Roboto:ital,wght@0,400;1,900&display=swap');
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+.body{
+    
+    backdrop-filter: blur(5px);
+    height: 99%;
+    background: rgba(210, 171, 219, 0.692);
+    width: 98%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(73, 70, 70), -3px -3px 3px rgb(110, 103, 103);
+    overflow: scroll;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgb(0, 255, 115);
+    top:2%;
+    right : 0%;
+}
+body::after{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgb(0, 255, 115);
+    bottom:2%;
+    left: 0%;
+    z-index: -1;
+    border-radius: 50%;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1%;
+    background:rgba(2, 151, 139, 0);
+    
+}
+header span{
+    margin-right: 20px;
+    padding: 1%;
+   
+}
+header span:hover{
+    cursor: pointer;
+    color: rgba(11, 224, 196, 0.075) ;
+   
+}
+hr{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 50% auto;
+    grid-template-rows: 80% auto;
+    
+    
+}
+.left-container
+{   
+    
+    background: rgba(2, 151, 139, 0);
+    height: 100%;
+    z-index: -1;
+    border-right: 1px solid rgb(170, 150, 150);
+    
+}
+.right-container
+{
+    
+   
+    font-family: 'Roboto', sans-serif;
+    padding: 1%;
+    border-right: 1px solid rgb(170, 150, 150);
+
+}
+.avatar-container
+{
+  
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.avatar{
+    width: 18vw;
+    height: 18vw;
+  
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profile{
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.name-container{
+    display: flex;
+    justify-content: center;
+}
+.speciality-container{
+    display: flex;
+    justify-content: center;
+}
+.location-container{
+    display: flex;
+    justify-content: center;
+}
+.appointment-container{
+    font-family: 'Roboto', sans-serif;  
+}
+.category-container{
+    display: flex;
+    width: 100%;
+    
+}
+.category{
+    width: 100%;
+    padding:1%;
+    min-width: 100px;
+}
+.color{
+    
+}
+.option-container{
+  background: rgba(2, 151, 139, 0);
+  display: flex;
+  justify-content: space-between;
+}
+.option{
+    border-right: 2px solid rgba(209, 209, 209, 0.219);
+    width: 150px;
+    padding: 0%;
+    line-height: 0;
+     
+}
+.option h4{
+    text-align: center;
+    margin: 15px;
+}
+
+.option:hover{
+    color: rgb(0, 212, 18);
+    cursor : pointer;   
+}
+.accepted{
+    color: rgb(184, 189, 184);
+}
+
+.meetings-container{
+    margin-top: 0;
+    position: relative;
+    background: rgba(221, 210, 210, 0);
+}
+.meeting-container{
+    display: flex;
+    margin-top: 1%;
+   
+    padding: 1%;
+}
+.title {
+    width: 100%;
+}
+.title h5{
+    margin-left: 0;
+}
+.date{
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.meeting-image-container{
+    height: 100px;
+    width:100px;
+    background: rgba(2, 151, 139, 0);
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(1, 46, 23, 0.288);
+}
+.meetings-detail{
+    width: 100%;
+}
+.meeting-details{
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    width: 100%;    
+}
+.reviews-container{
+    font-size: 15px;
+    margin-top: 10px;
+    width: 100%;
+
+}
+.review-container
+{
+    display: flex;
+    margin-top: 10px;
+   
+}
+.review-image-container{
+   
+}
+.image{
+ 
+    min-width : 50px;
+    width: 50px;
+    aspect-ratio: 1;
+    background: rgba(2, 151, 139, 0);
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgb(150, 149, 149);
+}
+.review-rating h5
+{
+    line-height: 0;
+    margin: 5px;
+    margin-left: 0;
+}
+.comment, .review-time
+{
+    width: 100%;
+    font-size: 12px;
+
+}
+.review-details
+{ 
+    
+    padding-left: 3%;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.review-detail{
+    width: 100%;
+}
+.rd-container{
+    padding  : 1%;
+    background: rgba(53, 56, 56, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.review-container{
+    box-shadow: 1px 2px 3px rgb(141, 141, 141);
+    padding: 2%;
+}
+footer{
+    grid-column:1/4;
+    width: 100%;
+    height: 100%;
+    background: rgba(22, 1, 24, 0);
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    color: blanchedalmond;
+    letter-spacing:2px ;
+    word-spacing: 20px;
+}
+h3{
+    line-height: 0px;
+}
+h5{
+    line-height: 5px;
+    margin: 2%;
+}

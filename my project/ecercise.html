@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball game</title>
+    <link rel="stylesheet" href="ecercise.css">
+</head>
+<body>
+    <h1 id="distance">distance count</h1>
+    <div id="container">
+    
+
+        <div id="ball"></div>
+    </div>
+    <script>
+        const distances = document.getElementById("distance")
+        const container = document.getElementById("container");
+        const ball = document.getElementById("ball");
+        var distance =  0;
+        var enc = 0
+        ball.style.left = enc+"%"
+
+
+      
+
+        ball.onclick = ()=>{
+distance = 10;
+        } 
+
+        setInterval(() => {
+            move()
+        }, 300);
+
+        const move = ()=>{
+            
+            setInterval(() => {
+                if(distance)
+          {
+              ball.style.left = enc+"%"
+              distances.innerHTML = enc
+              enc += 0.003
+             
+          }        
+              },10);
+
+              if(distance)
+              {
+                  distance--
+              }
+              
+            } 
+
+         
+          
+
+    </script>
+</body>
+</html>

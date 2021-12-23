@@ -1,0 +1,93 @@
+body{
+    font-size: 3vw;
+    margin: 0;
+}
+ .header{
+     background: rgb(0, 225, 255);
+     box-shadow: 2px 2px 2px rgb(248, 244, 244),3px 3px 3px rgb(165, 164, 164),5px 5px 5px rgb(165, 164, 164);
+     border-bottom: 2px solid rgba(131, 129, 129, 0.39);
+     
+ }
+ .links{
+     
+     display: flex;
+     justify-content: flex-end;
+
+ }
+ .link{
+     margin: 2vw;
+     font-weight: 200;
+ }
+ .link:hover{
+     color :rgb(30, 255, 0);
+     cursor: pointer;
+ }
+ .pair
+ {
+     display: flex;
+     justify-content: center;
+
+     margin: 3vh;
+ }
+ .body{
+     margin-top:5vh;
+     padding: 2vw;
+ }
+ input{
+    margin-left: 1vw;
+     font-size: 20px;
+ }
+ .submit{
+     display: flex;
+     justify-content: center;
+ }
+ input{
+     border: none;
+     padding: 1%;
+     background: rgb(3, 194, 219);
+     color :rgb(17, 0, 27);
+ }
+ .submitt{
+     border-radius: 30px;
+     padding: 2%;
+     box-shadow: 1px 1px 1px rgb(117, 116, 116)  ;
+ }
+ .footer{
+     background: rgb(17, 0, 27);
+     color:rgb(101, 2, 158) ;
+     padding: 4vh;
+     display: flex;
+     justify-content: center;
+ }
+ span{
+     margin : 2%;
+ }
+ p{
+     width: 70%;
+ }
+ .text{
+     display: flex;
+     justify-content: center;
+     font-size: 20px;
+ }
+ form{
+     background: rgb(0, 225, 255);
+     width: 50%;
+     padding: 3%;
+     box-shadow: 5px 5px 5px rgb(87, 87, 87), -2px -2px 5px rgb(87, 87, 87);
+     margin-left: 10%;
+ }
+ .form{
+     
+ }
+ .divider{
+        position: fixed;
+        top : 0px;
+        width: 70%;
+        height: 100%;
+        background: rgb(0, 225, 255) ;
+        transform: rotateZ(30deg);
+        transform: scaleY(3) rotateZ(30deg);
+        z-index: -1;
+        
+ }
